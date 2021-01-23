@@ -75,7 +75,16 @@ python train.py --dataroot ./datasets/colorization --name color_pix2pix --model 
 
 * Note: If you want to train the model in colab , I have this available [here](https://colab.research.google.com/drive/19AhOZNh4WV123PdF4A4A0_MlsSpXKgd6?usp=sharing).
 
-
+## Run the work
+If You want to proof the work , you need mov to dirs and position yourself with ```NihonBW/``` and run this command
+```
+streamlit run Main.py
+```
+* Note: 
+```
+Local host : http://localhost:8501 
+Network URL:  http://192.168.0.5:8501
+```
 ## Citation
 if you want to cite this code for your research , please cite my papers.
 ```
