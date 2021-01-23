@@ -71,7 +71,7 @@ python train.py --dataroot ./datasets/colorization --name color_pix2pix --model 
 ```
 4. Search the dir checkpoints/color_pix2pix the weigth  ```latest_net_G.pth ```.
 
-5. 
+5. Now in the dir ```/NihongoBW/pytorchpix2pix/ ``` create the dir ```experiment_name``` and  you need to move the  ```latest_net_G.pth ``` in the dir ```/NihongoBW/pytorchpix2pix/checkpoints/experiment_name/```.
 
 * If you want to train the model , I have this available  colab [here](https://colab.research.google.com/drive/19AhOZNh4WV123PdF4A4A0_MlsSpXKgd6?usp=sharing).
 
@@ -80,7 +80,7 @@ if you want to cite this code for your research , please cite my papers.
 ```
  @article{lique , 
  title={Coloring Black and White Images}, 
- author={Lique Lamas, Alexander   Leonardo},
+ author={Lique Lamas, Alexander Leonardo},
  year={2021}} 
 ```
 ## 👨🏽‍💻 Maintainer
