@@ -11,7 +11,7 @@
 ## 📜 Abstract 
 
 ## 🆕 Update
-04/12/2020 - The Streamlit is almost finished , the [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) model is loaded and ready to test and the [InstColorization](https://github.com/ericsujw/InstColorization) model is in the last training process .
+23/01/2021 - The Streamlit is almost finished , the [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) model is loaded and ready to test and the [InstColorization](https://github.com/ericsujw/InstColorization) model is in the last training process .
 ## 📖 Content
 The following tree shows the structure of the application:
 ```
