@@ -38,7 +38,7 @@ The following tree shows the structure of the application:
 |   |-README.md
 |   |-requeriment.txt
 ```
-information_source Instructions
+:information_source: Instructions
 
 ## 👨🏽‍💻 Maintainer
 * Alexander Leonardo Lique Lamas, Github: [alexliqu09](https://github.com/alexliqu09) Email: alexander.lique.l@uni.pe
