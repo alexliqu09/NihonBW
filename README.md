@@ -63,7 +63,7 @@ git clone https://github.com/alexliqu09/NihonBW.git
 ## Train models
 
 ## Pix2Pix
-1. If you want to train the model in local , first you need clone the original repository [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
+1. If you want to train the model in local , first you need clone the original repository [Pix2Pix](https://colab.research.google.com/drive/19AhOZNh4WV123PdF4A4A0_MlsSpXKgd6?usp=sharing).
 2. Now you should create a dir  in pytorch-CycleGAN-and-pix2pix / datasets / with the name colorization and inside of this dir you create train dir , finally  in train dir put your color images of trains . 
 3. Finally , you only follow the script of Pix2Pix repository and use the follow command  
 ```
@@ -74,6 +74,7 @@ python train.py --dataroot ./datasets/colorization --name color_pix2pix --model 
 5. Now in the dir ```/NihongoBW/pytorchpix2pix/ ``` create the dir ```experiment_name``` and  you need to move the  ```latest_net_G.pth ``` in the dir ```/NihongoBW/pytorchpix2pix/checkpoints/experiment_name/```.
 
 * Note: If you want to train the model in colab , I have this available [here](https://colab.research.google.com/drive/19AhOZNh4WV123PdF4A4A0_MlsSpXKgd6?usp=sharing).
+
 
 ## Citation
 if you want to cite this code for your research , please cite my papers.
