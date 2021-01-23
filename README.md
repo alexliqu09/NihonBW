@@ -20,7 +20,7 @@ The following tree shows the structure of the application:
 |       |-Images/
 |       |-Result/
 |   |-RC/
-|       |-Images/.
+|       |-Images/
 |   |-env/..
 |   |-test_pix2pix/..
 |   |-imgs/..
@@ -38,7 +38,28 @@ The following tree shows the structure of the application:
 |   |-README.md
 |   |-requeriment.txt
 ```
-## :information_source: Instructions 
+## Prerequisites
+
+* Linux
+* Python 3
+* GPU + CUDA CuDNN
+
+## Getting Started
+
+## Installation
+1. Install the envariment
+ ```
+ pip install virtualenv
+ ```
+2. Install all dependencies with the command
+ ```
+ pip install -r requirements.txt.
+ ```
+## Train models
+
+1. Pix2Pix
+
+* If you want to train the model , I have this available  colab [here](https://colab.research.google.com/drive/19AhOZNh4WV123PdF4A4A0_MlsSpXKgd6?usp=sharing).
 
 ## Citation
 if you want to cite this code for your research , please cite my papers.
