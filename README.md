@@ -55,9 +55,23 @@ The following tree shows the structure of the application:
  ```
  pip install -r requirements.txt.
  ```
+
+3. Clone this repo:
+ ```
+git clone https://github.com/alexliqu09/NihonBW.git
+ ```
 ## Train models
 
-1. Pix2Pix
+## Pix2Pix
+1. If you want to train the model in local , first you need clone the original repository [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
+2. Now you should create a dir  in pytorch-CycleGAN-and-pix2pix / datasets / with the name colorization and inside of this dir you create train dir , finally  in train dir put your color images of trains . 
+3. Finally , you only follow the script of Pix2Pix repository and use the follow command  
+```
+python train.py --dataroot ./datasets/colorization --name color_pix2pix --model colorization 
+```
+4. Search the dir checkpoints/color_pix2pix the weigth  ```latest_net_G.pth ```.
+
+5. 
 
 * If you want to train the model , I have this available  colab [here](https://colab.research.google.com/drive/19AhOZNh4WV123PdF4A4A0_MlsSpXKgd6?usp=sharing).
 
