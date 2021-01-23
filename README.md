@@ -40,9 +40,17 @@ The following tree shows the structure of the application:
 ```
 ## :information_source: Instructions 
 
+## Citation
+if you want to cite this code for your research , please cite my papers.
+```
+ @article{lique , 
+ title={Coloring Black and White Images}, 
+ author={Lique Lamas, Alexander   Leonardo},
+ year={2021}} 
+```
 ## 👨🏽‍💻 Maintainer
 * Alexander Leonardo Lique Lamas, Github: [alexliqu09](https://github.com/alexliqu09) Email: alexander.lique.l@uni.pe
 
 ## 🙏🏽 Special thanks
 
-* Many thanks to the repository the [junyanz](https://github.com/junyanz) author of [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix),this work would not have been possible without your repository.
+* Many thanks to the repository of [junyanz](https://github.com/junyanz) author of [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix),this work would not have been possible without your repository.
