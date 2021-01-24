@@ -186,6 +186,8 @@ if __name__ == '__main__':
                         M.load_image_model("Pix2Pix",M.name_fake,"Result",300)
                         #st.write("tiempo de inferencia de pix2pix: "+str(M.time()))
                         M.message(Correo,password,"Pix2Pix")
+                        print("the time inference is: "+str(M.time()))
+                        st.write(str(M.time()))
 
         if Radio=='BW':
 
