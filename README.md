@@ -79,7 +79,7 @@ python train.py --dataroot ./datasets/colorization --name color_pix2pix --model 
 ## Run the work
 If You want to proof the work , you need mov to dirs and position yourself with ```NihonBW/``` and run this command
 ```
-streamlit run Main.py
+streamlit run main.py
 ```
 * Note: 
 ```
