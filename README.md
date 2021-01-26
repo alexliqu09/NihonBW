@@ -74,7 +74,7 @@ python train.py --dataroot ./datasets/colorization --name color_pix2pix --model 
 
 5. Now in the dir ```/NihongoBW/pytorchpix2pix/checkpoints/ ``` create the dir ```experiment_name``` and  you need to move the  ```latest_net_G.pth ``` in the dir ```/NihongoBW/pytorchpix2pix/checkpoints/experiment_name/```.
 
-* Note: If you want to train the model in colab , I have this available [here](https://colab.research.google.com/github/alexliqu09/NihonBW/blob/main/Notebook_Colab/NihonBw_Pix2Pix_Train.ipynb).
+* Note: If you want to train the model in colab , I have this available [here](https://colab.research.google.com/github/alexliqu09/NihonBW/blob/main/Notebook_colabs/Pix2Pix/NihonBw_Pix2Pix_Train.ipynb).
 * Note: The dataset used me is available [here](https://drive.google.com/drive/folders/1h92vKaWDMGzolhSv0mOF8-J_OkVznQBw?usp=sharing)
 ## Run the work
 If You want to proof the work , you need mov to dirs and position yourself with ```NihonBW/``` and run this command
