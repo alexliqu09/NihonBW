@@ -3,3 +3,4 @@ pip install cython pyyaml==5.1
 pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
 pip install dominate==2.4.0
 pip install detectron2==0.1.2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/index.html
+#pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/index.html

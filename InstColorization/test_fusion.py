@@ -28,22 +28,22 @@ if __name__ == '__main__':
         os.makedirs(save_img_path)
     opt.batch_size = 1
     dataset = Fusion_Testing_Dataset(opt)
-    dataset_loader = torch.utils.data.DataLoader(dataset, batch_size=1, num_workers=2)
+    dataset_loader = torch.utils.data.DataLoader(dataset, batch_size=1, num_workers=4)
 
     dataset_size = len(dataset)
     print('#Testing images = %d' % dataset_size)
 
     model = create_model(opt)
-    # model.setup_to_test('coco_finetuned_mask_256')
+    #model.setup_to_test('coco_finetuned_mask_256')
     model.setup_to_test('coco_finetuned_mask_256_ffs')
 
     count_empty = 0
     for data_raw in tqdm(dataset_loader, dynamic_ncols=True):
         # if os.path.isfile(join(save_img_path, data_raw['file_id'][0] + '.png')) is True:
         #     continue
-        data_raw['full_img'][0] = data_raw['full_img'][0].cuda()
+        data_raw['full_img'][0] = data_raw['full_img'][0].cpu()
         if data_raw['empty_box'][0] == 0:
-            data_raw['cropped_img'][0] = data_raw['cropped_img'][0].cuda()
+            data_raw['cropped_img'][0] = data_raw['cropped_img'][0].cpu()
             box_info = data_raw['box_info'][0]
             box_info_2x = data_raw['box_info_2x'][0]
             box_info_4x = data_raw['box_info_4x'][0]
