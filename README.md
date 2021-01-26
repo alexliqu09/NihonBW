@@ -92,7 +92,7 @@ Network URL:  http://192.168.0.5:8501
 ## 🙏🏽 Special thanks
 
 * Many thanks to the repository of [junyanz](https://github.com/junyanz) author of [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix),this work would not have been possible without your repository.
-*Many thanks to the repository of [ericsujw](https://github.com/ericsujw) author of [InstColorization](https://github.com/ericsujw/InstColorization),this work would not have been possible without your repository.
+* Many thanks to the repository of [ericsujw](https://github.com/ericsujw) author of [InstColorization](https://github.com/ericsujw/InstColorization),this work would not have been possible without your repository.
 
 ## Citation
 If you want to cite this code for your research , please cite my paper:
