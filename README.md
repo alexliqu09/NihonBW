@@ -118,7 +118,7 @@ python train.py --stage fusion --name coco_mask --sample_p 1.0 --niter 10 --nite
 ```
 4. Search the dir ```NihonBW/InstColorization/checkpoints/``` the weigth move and change the dir ```checkpoints/``` for the ```checkpoints/``` where you trained.
 
-* Note: If you want to train the model in colab , I have this available [here]().
+* Note: If you want to train the model in colab , I have this available [here](https://colab.research.google.com/github/alexliqu09/NihonBW/blob/main/Notebook_colabs/InstColorization/InstanceColorization.ipynb).
 
 ## 👨🏽‍💻 Maintainer
 * Alexander Leonardo Lique Lamas, Github: [alexliqu09](https://github.com/alexliqu09) Email: alexander.lique.l@uni.pe
