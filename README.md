@@ -76,16 +76,7 @@ python train.py --dataroot ./datasets/colorization --name color_pix2pix --model 
 
 * Note: If you want to train the model in colab , I have this available [here](https://colab.research.google.com/github/alexliqu09/NihonBW/blob/main/Notebook_colabs/Pix2Pix/NihonBw_Pix2Pix_Train.ipynb).
 * Note: The dataset used me is available [here](https://drive.google.com/drive/folders/1h92vKaWDMGzolhSv0mOF8-J_OkVznQBw?usp=sharing)
-## Run the work
-If You want to proof the work , you need mov to dirs and position yourself with ```NihonBW/``` and run this command
-```
-streamlit run main.py
-```
-* Note: 
-```
-Local host : http://localhost:8501 
-Network URL:  http://192.168.0.5:8501
-```
+
 ## InstColorization
 1. If you want to train the model in local , first you need clone the original repository [InstColorization](https://github.com/ericsujw/InstColorization).
 2. Now you should create a dir  in  ```InstColorization/train_dataset/ ``` with the name colorization and inside of this dir you create train dir , now  in train dir put your color images of trains . 
@@ -119,6 +110,17 @@ python train.py --stage fusion --name coco_mask --sample_p 1.0 --niter 10 --nite
 4. Search the dir ```NihonBW/InstColorization/checkpoints/``` the weigth move and change the dir ```checkpoints/``` for the ```checkpoints/``` where you trained.
 
 * Note: If you want to train the model in colab , I have this available [here](https://colab.research.google.com/github/alexliqu09/NihonBW/blob/main/Notebook_colabs/InstColorization/InstanceColorization.ipynb).
+
+## Run the work
+If You want to proof the work , you need mov to dirs and position yourself with ```NihonBW/``` and run this command
+```
+streamlit run main.py
+```
+* Note: 
+```
+Local host : http://localhost:8501 
+Network URL:  http://192.168.0.5:8501
+```
 
 ## 👨🏽‍💻 Maintainer
 * Alexander Leonardo Lique Lamas, Github: [alexliqu09](https://github.com/alexliqu09) Email: alexander.lique.l@uni.pe
