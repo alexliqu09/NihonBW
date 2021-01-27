@@ -82,6 +82,8 @@ python train.py --dataroot ./datasets/colorization --name color_pix2pix --model 
 2. Now you should create a dir  in  ```InstColorization/train_dataset/ ``` with the name colorization and inside of this dir you create train dir , now  in train dir put your color images of trains . 
 3. Finally , you only follow the script of InstColorization repository and use the follow command  
 ```
+#Prepare the data
+
 python inference_bbox.py --test_img_dir ./train_dataset/train --filter_no_obj
 
 #First Module
