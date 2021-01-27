@@ -64,7 +64,7 @@ git clone https://github.com/alexliqu09/NihonBW.git
 ## Train models
 
 ## Pix2Pix
-1. If you want to train the model in local , first you need clone the original repository [Pix2Pix](https://colab.research.google.com/drive/19AhOZNh4WV123PdF4A4A0_MlsSpXKgd6?usp=sharing).
+1. If you want to train the model in local , first you need clone the original repository [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 2. Now you should create a dir  in  ```pytorch-CycleGAN-and-pix2pix / datasets / ``` with the name colorization and inside of this dir you create train dir , now  in train dir put your color images of trains . 
 3. Finally , you only follow the script of Pix2Pix repository and use the follow command  
 ```
@@ -86,6 +86,40 @@ streamlit run main.py
 Local host : http://localhost:8501 
 Network URL:  http://192.168.0.5:8501
 ```
+## InstColorization
+1. If you want to train the model in local , first you need clone the original repository [InstColorization](https://github.com/ericsujw/InstColorization).
+2. Now you should create a dir  in  ```InstColorization/train_dataset/ ``` with the name colorization and inside of this dir you create train dir , now  in train dir put your color images of trains . 
+3. Finally , you only follow the script of InstColorization repository and use the follow command  
+```
+python inference_bbox.py --test_img_dir ./train_dataset/train --filter_no_obj
+
+#First Module
+
+mkdir ./checkpoints/coco_full
+
+cp ./checkpoints/siggraph_retrained/latest_net_G.pth ./checkpoints/coco_full/
+
+python train.py --stage full --name coco_full --sample_p 1.0 --niter 100 --niter_decay 50 --load_model --lr 0.0005 --model train --fineSize 256 --batch_size 16 --display_ncols 3 --display_freq 1600 --print_freq 1600 --train_img_dir      ./train_dataset/train 
+
+#Second Module
+
+mkdir ./checkpoints/coco_instance
+cp ./checkpoints/coco_full/latest_net_G.pth ./checkpoints/coco_instance/
+python train.py --stage instance --name coco_instance --sample_p 1.0 --niter 100 --niter_decay 50 --load_model --lr 0.0005 --model train --fineSize 256 --batch_size 16 --display_ncols 3 --display_freq 1600 --print_freq 1600 --train_img_dir ./train_dataset/train 
+
+#Third Module
+
+mkdir ./checkpoints/coco_mask
+cp ./checkpoints/coco_full/latest_net_G.pth ./checkpoints/coco_mask/latest_net_GF.pth
+cp ./checkpoints/coco_instance/latest_net_G.pth ./checkpoints/coco_mask/latest_net_G.pth
+cp ./checkpoints/coco_full/latest_net_G.pth ./checkpoints/coco_mask/latest_net_GComp.pth
+python train.py --stage fusion --name coco_mask --sample_p 1.0 --niter 10 --niter_decay 20 --lr 0.00005 --model train --load_model --display_ncols 4 --fineSize 256 --batch_size 1 --display_freq 500 --print_freq 500 --train_img_dir          ./train_dataset/train 
+
+```
+4. Search the dir ```NihonBW/InstColorization/checkpoints/``` the weigth move and change the dir ```checkpoints/``` for the ```checkpoints/``` where you trained.
+
+* Note: If you want to train the model in colab , I have this available [here]().
+
 ## 👨🏽‍💻 Maintainer
 * Alexander Leonardo Lique Lamas, Github: [alexliqu09](https://github.com/alexliqu09) Email: alexander.lique.l@uni.pe
 
