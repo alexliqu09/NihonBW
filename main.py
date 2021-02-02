@@ -217,8 +217,10 @@ if __name__ == '__main__':
                 M.send_image('../NihongoBW/src/Images/',"InstColorization.png","InstColorization",900)
                 st.title("Coming Soon")
                 st.write("This model will be available soon, at the moment you have this repository available to train the [model](https://github.com/alexliqu09/NihonBW) yourself.")
-                st.title(Some results)
-                              
+                st.title("Some results")
+                M.send_image("../NihongoBW/src/Images/","Image_proof_instance.jpg","Image 1",500)
+                M.send_image("../NihongoBW/src/Images/","Image_proof_instcolorizatib2.jpg","Image 2",500)
+                M.send_image("../NihongoBW/src/Images/","Image3.jpg","Image 3",500)
         if Radio=='About':
                 
                 st.markdown("<h1 style='text-align: center; color: red;'> About </h1>", unsafe_allow_html=True)
