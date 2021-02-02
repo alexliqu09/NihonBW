@@ -153,15 +153,15 @@ if __name__ == '__main__':
         if  Radio=='Home':
 
                 st.markdown("<h1 style='text-align: center; color: red;'> NihonBW </h1>", unsafe_allow_html=True)
-                M.send_image('../NihongoBW/RC/Images/',"NihonBW.jpeg","The Imperial House of Japan",945)  
+                M.send_image('../NihongoBW/src/Images/',"NihonBW.jpeg","The Imperial House of Japan",945)  
                 st.title("About the work")
                 st.markdown("NihonBW is a project that provides a service to convert Black and white Image to Color and this model  focus of black and white image , and Why the NihonBW?, because the data have used in my project is from the culture , Japanese ,\n where I gathered different image from some  prefecture of Japan \n , e.g- Hokkaido , Tokyo , Kyoto , Osaka and more hope you delight to this work.")
                 st.title("Pix2Pix model")
                 st.markdown("This model was developed to apply an approach to multiple problems, e.g- day to night ,\n border to photos, aerial map, black and white color ,\n the paper is available [here](https://phillipi.github.io/pix2pix/) . We have available  BW to Color model .")
-                M.send_image('../NihongoBW/RC/Images/',"Pix2Pix_model.jpg","Pix2Pix model",600) 
+                M.send_image('../NihongoBW/src/Images/',"Pix2Pix_model.jpg","Pix2Pix model",600) 
                 st.header("BW: ")
                 st.markdown("We have Available the function convert Color image to Black and White")
-                M.send_image('../NihongoBW/RC/Images/',"HBW.jpg","Result BW",600)   
+                M.send_image('../NihongoBW/src/Images/',"HBW.jpg","Result BW",600)   
         
         if Radio=='Pix2Pix':
 
@@ -179,7 +179,7 @@ if __name__ == '__main__':
                         M.Pix2Pix()
                         st.header("Images")
                         M.send_image('../NihongoBW/pytorchpix2pix/colorization/test/','test.jpg',"your image",300)
-                        image=Image.open('/home/alex/Desktop/NihongoBW/pytorchpix2pix/results/experiment_name/test_latest/images/test_fake_B_rgb.png')
+                        image=Image.open('../NihongoBW/pytorchpix2pix/results/experiment_name/test_latest/images/test_fake_B_rgb.png')
                         image.save('../NihongoBW/test_pix2pix/'+M.name_fake)
                         M.send_image('../NihongoBW/pytorchpix2pix/results/experiment_name/test_latest/images/',"test_real_A.png","convert_images",300)
                         M.load_image_model("Pix2Pix",M.name_fake,"Result",300)
@@ -190,8 +190,8 @@ if __name__ == '__main__':
 
         if Radio=='BW':
 
-                st.markdown("<h1 style='text-align: center; color: red;'> Convert Color Image to Black and White </h1>", unsafe_allow_html=True)
-                M.send_image('../NihongoBW/RC/Images/',"BW.jpg","Result BW",900)
+                st.markdown("<h1 style='text-align: center; color: red;'> InstColorization </h1>", unsafe_allow_html=True)
+                M.send_image('../NihongoBW/src/Images/',"BW.jpg","Result BW",900)
                 st.title("Write your Email")
                 Correo =st.text_input("Correo","")
                 password=st.text_input("password","",type='password')
@@ -203,12 +203,16 @@ if __name__ == '__main__':
                         M.send_image("../NihongoBW/BW/Images/",M.name_BW,"Original",400)
                         M.send_image("../NihongoBW/BW/Result/",M.name_BW,"Result",400)
                         M.message(Correo,password,"BW")
+
         if Radio=='InstanColorization':
-                
+
+                st.markdown("<h1 style='text-align: center; color: red;'> Convert Color Image to Black and White </h1>", unsafe_allow_html=True)
+                st.markdown("<p align="center"> <img src="src/alex.gif" width="700"/><p align="center">"SocialNet"</p></p align="center">")
+        
         if Radio=='About':
                 
                 st.markdown("<h1 style='text-align: center; color: red;'> About </h1>", unsafe_allow_html=True)
-                M.send_image('../NihongoBW/RC/Images/',"Author.jpg","Author",900)
+                M.send_image('../NihongoBW/src/Images/',"Author.jpg","Author",900)
                 st.title("Me")
                 st.markdown("I am researcher of Deep Learning. I think the AI is the present and future of technology development. \n My motivation to carry out this project is because I want to deep in the Image Processing \n and also I wanted to learn about the culture and apply the data of Japan. \n")
                 st.title("Contact me")
