@@ -207,7 +207,7 @@ if __name__ == '__main__':
         if Radio=='InstanColorization':
 
                 st.markdown("<h1 style='text-align: center; color: red;'> Convert Color Image to Black and White </h1>", unsafe_allow_html=True)
-                st.markdown("<p align="center"> <img src="src/alex.gif" width="700"/><p align="center">"SocialNet"</p></p align="center">")
+                #st.markdown("<p align="center"> <img src="src/alex.gif" width="700"/><p align="center">"SocialNet"</p></p align="center">")
         
         if Radio=='About':
                 
