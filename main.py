@@ -166,7 +166,7 @@ if __name__ == '__main__':
         if Radio=='Pix2Pix':
 
                 st.markdown("<h1 style='text-align: center; color: red;'> Pix2Pix model </h1>", unsafe_allow_html=True)
-                M.send_image('../NihongoBW/RC/Images/',"Pix2Pix.jpg","Pix2Pix",945)
+                M.send_image('../NihongoBW/src/Images/',"Pix2Pix.jpg","Pix2Pix",945)
                 st.title("Write your Email")
                 Correo =st.text_input("Correo","")
                 password=st.text_input("password","",type='password')
@@ -206,7 +206,7 @@ if __name__ == '__main__':
 
         if Radio=='InstanColorization':
 
-                st.markdown("<h1 style='text-align: center; color: red;'> Convert Color Image to Black and White </h1>", unsafe_allow_html=True)
+                st.markdown("<h1 style='text-align: center; color: red;'> InstColorization </h1>", unsafe_allow_html=True)
                 #st.markdown("<p align="center"> <img src="src/alex.gif" width="700"/><p align="center">"SocialNet"</p></p align="center">")
         
         if Radio=='About':
