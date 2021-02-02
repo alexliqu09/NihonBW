@@ -130,7 +130,7 @@ below a demonstration of this work.
 
 <img src="src/Images/demo.gif" width="700"/>
 
-<p align="center">"SocialNet"</p>
+<p align="center">"NihonBW"</p>
 
 </p align="center">
 

@@ -216,7 +216,7 @@ if __name__ == '__main__':
                 st.markdown("<h1 style='text-align: center; color: red;'> InstColorization </h1>", unsafe_allow_html=True)
                 M.send_image('../NihongoBW/src/Images/',"InstColorization.png","InstColorization",750)
                 st.title("Coming Soon")
-                st.write("This model will be available soon, at the moment you have this repository available to train the [model](https://github.com/alexliqu09/NihonBW) yourself.")
+                st.write("This model will be available soon, at the moment you have this colab available to train the [model](https://colab.research.google.com/github/alexliqu09/NihonBW/blob/main/Notebook_colabs/InstColorization/InstanceColorization.ipynb) yourself.")
                 st.title("Some results")
                 M.send_image("../NihongoBW/src/Images/","Image_proof_instance.jpg","Image 1",500)
                 M.send_image("../NihongoBW/src/Images/","Image_proof_instcolorizatib2.jpg","Image 2",500)
