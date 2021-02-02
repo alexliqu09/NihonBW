@@ -157,7 +157,7 @@ if __name__ == '__main__':
         if  Radio=='Home':
 
                 st.markdown("<h1 style='text-align: center; color: red;'> NihonBW </h1>", unsafe_allow_html=True)
-                M.send_image('../NihongoBW/src/Images/',"NihonBW.jpeg","The Imperial House of Japan",945)  
+                M.send_image('../NihongoBW/src/Images/',"NihonBW.jpeg","The Imperial House of Japan",750)  
                 st.title("About the work")
                 st.markdown("NihonBW is a project that provides a service to convert Black and white Image to Color and this model  focus of black and white image , and Why the NihonBW?, because the data have used in my project is from the culture , Japanese ,\n where I gathered different image from some  prefecture of Japan \n , e.g- Hokkaido , Tokyo , Kyoto , Osaka and more hope you delight to this work.")
                 st.title("Pix2Pix model")
@@ -173,7 +173,7 @@ if __name__ == '__main__':
         if Radio=='Pix2Pix':
 
                 st.markdown("<h1 style='text-align: center; color: red;'> Pix2Pix model </h1>", unsafe_allow_html=True)
-                M.send_image('../NihongoBW/src/Images/',"Pix2Pix.jpg","Pix2Pix",945)
+                M.send_image('../NihongoBW/src/Images/',"Pix2Pix.jpg","Pix2Pix",750)
                 st.title("Write your Email")
                 Correo =st.text_input("Correo","")
                 password=st.text_input("password","",type='password')
@@ -198,7 +198,7 @@ if __name__ == '__main__':
         if Radio=='BW':
 
                 st.markdown("<h1 style='text-align: center; color: red;'> Convert Color Images to Black and White </h1>", unsafe_allow_html=True)
-                M.send_image('../NihongoBW/src/Images/',"BW.jpg","Result BW",900)
+                M.send_image('../NihongoBW/src/Images/',"BW.jpg","Result BW",750)
                 st.title("Write your Email")
                 Correo =st.text_input("Correo","")
                 password=st.text_input("password","",type='password')
@@ -214,7 +214,7 @@ if __name__ == '__main__':
         if Radio=='InstColorization':
 
                 st.markdown("<h1 style='text-align: center; color: red;'> InstColorization </h1>", unsafe_allow_html=True)
-                M.send_image('../NihongoBW/src/Images/',"InstColorization.png","InstColorization",900)
+                M.send_image('../NihongoBW/src/Images/',"InstColorization.png","InstColorization",750)
                 st.title("Coming Soon")
                 st.write("This model will be available soon, at the moment you have this repository available to train the [model](https://github.com/alexliqu09/NihonBW) yourself.")
                 st.title("Some results")
@@ -223,8 +223,8 @@ if __name__ == '__main__':
                 M.send_image("../NihongoBW/src/Images/","Image3.jpg","Image 3",500)
         if Radio=='About':
                 
-                st.markdown("<h1 style='text-align: center; color: red;'> About </h1>", unsafe_allow_html=True)
-                M.send_image('../NihongoBW/src/Images/',"Author.jpg","Author",700)
+                st.markdown("<h1 style='text-align:left; color: red;'> About </h1>", unsafe_allow_html=True)
+                M.send_image('../NihongoBW/src/Images/',"Author.jpg","Author",400)
                 st.title("Me")
                 st.markdown("I am researcher of Deep Learning. I think the AI is the present and future of technology development. \n My motivation to carry out this project is because I want to deep in the Image Processing \n and also I wanted to learn about the culture and apply the data of Japan. \n")
                 st.title("Contact me")
