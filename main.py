@@ -148,9 +148,8 @@ class Model():
                 return self.final-self.inicio
 if __name__ == '__main__':
 
-        Radio =st.sidebar.radio("Select",("Home","Pix2Pix","BW","About"))
+        Radio =st.sidebar.radio("Select",("Home","Pix2Pix","BW","InstColorization","About"))
         M=Model()
-        
         if  Radio=='Home':
 
                 st.markdown("<h1 style='text-align: center; color: red;'> NihonBW </h1>", unsafe_allow_html=True)
@@ -204,7 +203,8 @@ if __name__ == '__main__':
                         M.send_image("../NihongoBW/BW/Images/",M.name_BW,"Original",400)
                         M.send_image("../NihongoBW/BW/Result/",M.name_BW,"Result",400)
                         M.message(Correo,password,"BW")
-        
+        if Radio=='InstanColorization':
+                
         if Radio=='About':
                 
                 st.markdown("<h1 style='text-align: center; color: red;'> About </h1>", unsafe_allow_html=True)
