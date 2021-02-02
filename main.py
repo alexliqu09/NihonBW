@@ -146,6 +146,10 @@ class Model():
                 Esta función se encarga de ver el tiempo de inferencia del modelo.
                 '''
                 return self.final-self.inicio
+        def img_to_bytes(self , img_path):
+                img_bytes = Path(img_path).read_bytes()
+                encoded = base64.b64encode(img_bytes).decode()
+                return encoded
 if __name__ == '__main__':
 
         Radio =st.sidebar.radio("Select",("Home","Pix2Pix","BW","InstColorization","About"))
@@ -159,7 +163,10 @@ if __name__ == '__main__':
                 st.title("Pix2Pix model")
                 st.markdown("This model was developed to apply an approach to multiple problems, e.g- day to night ,\n border to photos, aerial map, black and white color ,\n the paper is available [here](https://phillipi.github.io/pix2pix/) . We have available  BW to Color model .")
                 M.send_image('../NihongoBW/src/Images/',"Pix2Pix_model.jpg","Pix2Pix model",600) 
-                st.header("BW: ")
+                st.title("InstColorization: ")
+                st.markdown("Instance conscious color is a modern approach to the problem of image color, which is based on the use \n of detection models and thus avoid the problem of previous models could not focus on an object.")
+                M.send_image('../NihongoBW/src/Images/',"InstColorization_proof.jpg","InstColorization",600)                   
+                st.title("BW: ")
                 st.markdown("We have Available the function convert Color image to Black and White")
                 M.send_image('../NihongoBW/src/Images/',"HBW.jpg","Result BW",600)   
         
@@ -190,7 +197,7 @@ if __name__ == '__main__':
 
         if Radio=='BW':
 
-                st.markdown("<h1 style='text-align: center; color: red;'> InstColorization </h1>", unsafe_allow_html=True)
+                st.markdown("<h1 style='text-align: center; color: red;'> Convert Color Images to Black and White </h1>", unsafe_allow_html=True)
                 M.send_image('../NihongoBW/src/Images/',"BW.jpg","Result BW",900)
                 st.title("Write your Email")
                 Correo =st.text_input("Correo","")
@@ -204,15 +211,18 @@ if __name__ == '__main__':
                         M.send_image("../NihongoBW/BW/Result/",M.name_BW,"Result",400)
                         M.message(Correo,password,"BW")
 
-        if Radio=='InstanColorization':
+        if Radio=='InstColorization':
 
                 st.markdown("<h1 style='text-align: center; color: red;'> InstColorization </h1>", unsafe_allow_html=True)
-                #st.markdown("<p align="center"> <img src="src/alex.gif" width="700"/><p align="center">"SocialNet"</p></p align="center">")
-        
+                M.send_image('../NihongoBW/src/Images/',"InstColorization.png","InstColorization",900)
+                st.title("Coming Soon")
+                st.write("This model will be available soon, at the moment you have this repository available to train the [model](https://github.com/alexliqu09/NihonBW) yourself.")
+                st.title(Some results)
+                              
         if Radio=='About':
                 
                 st.markdown("<h1 style='text-align: center; color: red;'> About </h1>", unsafe_allow_html=True)
-                M.send_image('../NihongoBW/src/Images/',"Author.jpg","Author",900)
+                M.send_image('../NihongoBW/src/Images/',"Author.jpg","Author",700)
                 st.title("Me")
                 st.markdown("I am researcher of Deep Learning. I think the AI is the present and future of technology development. \n My motivation to carry out this project is because I want to deep in the Image Processing \n and also I wanted to learn about the culture and apply the data of Japan. \n")
                 st.title("Contact me")
