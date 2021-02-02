@@ -12,6 +12,17 @@
 This work focuses on seeing a comparison between ancient and modern approaches to coloring the image where I chose two models which were Pix2Pix and Instance aware Colorization, where a notable difference was found in the coloring of their images and additionally a dataset of images related to Japan in order to put yourself in the position of training a model using data that you would only find in a certain place.
 * keywords:
  generative adversarial network , deep learning , instance , pix2pix , colorization , gray scale images
+
+##  Pipeline
+
+<p align="center">
+
+<img src="src/Images/PAM.png" width="700"/>
+
+<p align="center"></p>
+
+</p align="center">
+
 ## 🆕 Update
 - 23/01/2021 :
  The Streamlit is almost finished , the [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) model is loaded and ready to test and the [InstColorization](https://github.com/ericsujw/InstColorization) model is in the last training process .
