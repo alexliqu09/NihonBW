@@ -161,7 +161,7 @@ if __name__ == '__main__':
                 st.title("About the work")
                 st.markdown("NihonBW is a project that provides a service to convert Black and white Image to Color and this model  focus of black and white image , and Why the NihonBW?, because the data have used in my project is from the culture , Japanese ,\n where I gathered different image from some  prefecture of Japan \n , e.g- Hokkaido , Tokyo , Kyoto , Osaka and more hope you delight to this work.")
                 st.title("Pix2Pix model")
-                st.markdown("This model was developed to apply an approach to multiple problems, e.g- day to night ,\n border to photos, aerial map, black and white color ,\n the paper is available [here](https://phillipi.github.io/pix2pix/) . We have available  BW to Color model .")
+                st.markdown("This model was developed to apply  an approach to multiple problems, e.g- day to night ,\n border to photos, aerial map, black and white color ,\n the paper is available [here](https://phillipi.github.io/pix2pix/) . We have available  BW to Color model .")
                 M.send_image('../NihongoBW/src/Images/',"Pix2Pix_model.jpg","Pix2Pix model",600) 
                 st.title("InstColorization: ")
                 st.markdown("Instance conscious color is a modern approach to the problem of image color, which is based on the use \n of detection models and thus avoid the problem of previous models could not focus on an object.")
