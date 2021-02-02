@@ -125,6 +125,14 @@ streamlit run main.py
 Local host : http://localhost:8501 
 Network URL:  http://192.168.0.5:8501
 ```
+below a demonstration of this work.
+<p align="center">
+
+<img src="src/Images/demo.gif" width="700"/>
+
+<p align="center">"SocialNet"</p>
+
+</p align="center">
 
 ## 👨🏽‍💻 Maintainer
 * Alexander Leonardo Lique Lamas, Github: [alexliqu09](https://github.com/alexliqu09) Email: alexander.lique.l@uni.pe
