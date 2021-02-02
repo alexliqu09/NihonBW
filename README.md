@@ -5,6 +5,7 @@
 <p></p>
 <img src="https://img.shields.io/badge/PyTorch%20-%23EE4C2C.svg?&style=for-the-badge&logo=PyTorch&logoColor=white" />
 <img src="https://img.shields.io/badge/numpy%20-%23013243.svg?&style=for-the-badge&logo=numpy&logoColor=white" />
+<img src="https://colab.research.google.com/assets/colab-badge.svg"/>
 <p></p>
 </h2>
 
