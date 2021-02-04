@@ -25,8 +25,12 @@ This work focuses on seeing a comparison between ancient and modern approaches t
 </p align="center">
 
 ## 🆕 Update
-- 23/01/2021 :
- The Streamlit is almost finished , the [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) model is loaded and ready to test and the [InstColorization](https://github.com/ericsujw/InstColorization) model is in the last training process .
+- 04/02/2021 :
+ 
+ - The Streamlit is almost finished , the [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) model is     loaded and ready to test and the [InstColorization](https://github.com/ericsujw/InstColorization) model is loaded and ready to test.
+
+- We already have the first version of our work available here.
+
 ## 📖 Content
 The following tree shows the structure of the application:
 ```
@@ -88,7 +92,7 @@ python train.py --dataroot ./datasets/colorization --name color_pix2pix --model 
 
 5. Now in the dir ```/NihongoBW/pytorchpix2pix/checkpoints/ ``` create the dir ```experiment_name``` and  you need to move the  ```latest_net_G.pth ``` in the dir ```/NihongoBW/pytorchpix2pix/checkpoints/experiment_name/```.
 
-* Note: If you want to train the model in colab , I have this available [here](https://colab.research.google.com/github/alexliqu09/NihonBW/blob/main/Notebook_colabs/Pix2Pix/NihonBw_Pix2Pix_Train.ipynb).
+* Note: If you want to train the model in colab , I used is available [here](https://colab.research.google.com/github/alexliqu09/NihonBW/blob/main/Notebook_colabs/Pix2Pix/NihonBw_Pix2Pix_Train.ipynb).
 * Note: The dataset used me is available [here](https://drive.google.com/drive/folders/1h92vKaWDMGzolhSv0mOF8-J_OkVznQBw?usp=sharing)
 
 ## InstColorization
@@ -125,7 +129,7 @@ python train.py --stage fusion --name coco_mask --sample_p 1.0 --niter 10 --nite
 ```
 4. Search the dir ```NihonBW/InstColorization/checkpoints/``` the weigth move and change the dir ```checkpoints/``` for the ```checkpoints/``` where you trained.
 
-* Note: If you want to train the model in colab , I have this available [here](https://colab.research.google.com/github/alexliqu09/NihonBW/blob/main/Notebook_colabs/InstColorization/InstanceColorization.ipynb).
+* Note: If you want to train the model in colab , I used is available [here](https://colab.research.google.com/github/alexliqu09/NihonBW/blob/main/Notebook_colabs/InstColorization/InstanceColorization.ipynb).
 
 ## Run the work
 If You want to proof the work , you need mov to dirs and position yourself with ```NihonBW/``` and run this command

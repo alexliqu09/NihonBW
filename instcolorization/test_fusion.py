@@ -4,7 +4,7 @@ import time
 from options.train_options import TrainOptions, TestOptions
 from models import create_model
 from util.visualizer import Visualizer
-
+from time import time
 import torch
 import torchvision
 import torchvision.transforms as transforms
@@ -38,6 +38,7 @@ if __name__ == '__main__':
     model.setup_to_test('coco_finetuned_mask_256_ffs')
 
     count_empty = 0
+    time_star=time()
     for data_raw in tqdm(dataset_loader, dynamic_ncols=True):
         # if os.path.isfile(join(save_img_path, data_raw['file_id'][0] + '.png')) is True:
         #     continue
@@ -59,3 +60,5 @@ if __name__ == '__main__':
             model.set_forward_without_box(full_img_data)
         model.save_current_imgs(join(save_img_path, data_raw['file_id'][0] + '.png'))
     print('{0} images without bounding boxes'.format(count_empty))
+    time_finish=time()
+    print("el tiempo de inferencia: ",time_finish-time_star)
