@@ -14,7 +14,7 @@ This work focuses on seeing a comparison between ancient and modern approaches t
 * keywords:
  generative adversarial network , deep learning , instance , pix2pix , colorization , gray scale images
 
-The paper is available at this [here](https://drive.google.com/file/d/1Qmi-NyU9pgGxhe9F9_kWUlZPT_W90rH3/view?usp=sharing)
+The paper is available at this [here](https://drive.google.com/file/d/1W7PQsJca6PBLByQBEszfGxxJU1-J4NAb/view?usp=sharing)
 
 ##  Pipeline
 
