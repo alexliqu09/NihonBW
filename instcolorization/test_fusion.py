@@ -38,11 +38,11 @@ if __name__ == '__main__':
     model.setup_to_test('coco_finetuned_mask_256_ffs')
 
     count_empty = 0
-    time_star=time()
     for data_raw in tqdm(dataset_loader, dynamic_ncols=True):
         # if os.path.isfile(join(save_img_path, data_raw['file_id'][0] + '.png')) is True:
         #     continue
         data_raw['full_img'][0] = data_raw['full_img'][0].cuda()
+        time_star=time()
         if data_raw['empty_box'][0] == 0:
             data_raw['cropped_img'][0] = data_raw['cropped_img'][0].cuda()
             box_info = data_raw['box_info'][0]
@@ -58,7 +58,7 @@ if __name__ == '__main__':
             count_empty += 1
             full_img_data = util.get_colorization_data(data_raw['full_img'], opt, ab_thresh=0, p=opt.sample_p)
             model.set_forward_without_box(full_img_data)
+        time_finish=time()
+        print("el tiempo de inferencia: ",time_finish-time_star)
         model.save_current_imgs(join(save_img_path, data_raw['file_id'][0] + '.png'))
     print('{0} images without bounding boxes'.format(count_empty))
-    time_finish=time()
-    print("el tiempo de inferencia: ",time_finish-time_star)
