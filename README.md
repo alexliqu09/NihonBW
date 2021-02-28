@@ -10,7 +10,9 @@
 </h2>
 
 ## 📜 Abstract 
+
 This work focuses on seeing a comparison between ancient and modern approaches to coloring the image where I chose two models which were Pix2Pix and Instance aware Colorization, where a notable difference was found in the coloring of their images.
+
 * keywords:
  generative adversarial network , deep learning , instance , pix2pix , colorization , gray scale images
 
@@ -27,11 +29,14 @@ The paper is available at this [here](https://drive.google.com/file/d/1jwI4GYsps
 </p align="center">
 
 ## 🆕 Update
+
 - 27/02/2021 :
- 
- - The Streamlit is almost finished , the [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) model is     loaded and ready to test and the [InstColorization](https://github.com/ericsujw/InstColorization) model is loaded and ready to test.
 
 - We already have the first version of our work available here.
+
+ - The Streamlit is almost finished ,the [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) model is     loaded and ready to test and the [InstColorization](https://github.com/ericsujw/InstColorization) model is loaded and ready to test.
+
+- Second version in process.
 
 ## 📖 Content
 The following tree shows the structure of the application:
