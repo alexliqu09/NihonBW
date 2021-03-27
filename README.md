@@ -166,13 +166,7 @@ below a demonstration of this work.
 * Many thanks to the repository of [ericsujw](https://github.com/ericsujw) author of [InstColorization](https://github.com/ericsujw/InstColorization),this work would not have been possible without your repository.
 
 ## Citation
-If you want to cite this code for your research , please cite my paper:
-```
- @article{lique , 
- title={Coloring Black and White Images}, 
- author={Lique Lamas, Alexander Leonardo},
- year={2021}} 
-```
+
 If you find InstColorization useful , please cite this paper:
 ```
 @inproceedings{Su-CVPR-2020,
