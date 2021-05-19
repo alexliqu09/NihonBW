@@ -36,7 +36,7 @@ The paper is available at this here.
 
  - The Streamlit is almost finished ,the [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) model is     loaded and ready to test and the [InstColorization](https://github.com/ericsujw/InstColorization) model is loaded and ready to test.
 
-- Second version in process.
+- Coming soon.
 
 ## 📖 Content
 The following tree shows the structure of the application:
